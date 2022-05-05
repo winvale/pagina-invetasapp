@@ -1,8 +1,6 @@
 /*===============Propiedades Globales================*/
-header{
-    background: #36d1dc;
-    background: -webkit-linear-gradient(to right, #36d1dc, #5b86e5); 
-    background: linear-gradient(to right, #36d1dc, #5b86e5);
+.navbar{
+   background-color: #f3f3f3;
 }
 
 /*===============Propiedades Globales================*/
