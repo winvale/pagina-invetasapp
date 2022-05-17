@@ -54,6 +54,7 @@ body {
    /* background: url(../img/mapaConsaca.JPG);*/
     width:400%;
     height:500px;
+    border: 5px solid blue;
 }
 
 
