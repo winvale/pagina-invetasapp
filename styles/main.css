@@ -54,14 +54,14 @@ body {
    /* background: url(../img/mapaConsaca.JPG);*/
     width:400%;
     height:500px;
-    border: 5px solid blue;
+    padding: 20px 10px 10px 10px;
 }
 
 
 .wrapper-local {
     width:70%;
-    margin-left:100px;
-    padding-top:70px;
+    margin: auto;
+    padding: 10px;
 }
 
 
