@@ -11,3 +11,8 @@ typewriter
   .pauseFor(200)
   .deleteChars(10)
   .start();
+
+
+  function alertaM() {  
+    alert("¡Tu mensaje fue enviado con exito,pronto te contactaremos!");
+} 
