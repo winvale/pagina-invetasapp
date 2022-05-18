@@ -231,13 +231,14 @@
     <!--========================================================== -->
     <!-- CONTENEDOR DEL FORMULARIO -->
     <!--========================================================== -->
-    <div class="container  border-top border-primary " style="max-width: 500px" id="contenedor-formulario">
+
+    <div class="container border-top border-primary " style="max-width: 500px" id="contenedor-formulario">
       <div class="text-center mb-4" id="titulo-formulario">
         <div><img src="./img/support.png" alt="" class="img-fluid ps-5"></div>
         <h2>Contactanos</h2>
         <p class="fs-5">Inventas APP te espera</p>
       </div>
-      <form name="contacto" netlify action="#">
+      <form name="contacto" netlify >
         <div class="mb-3">
           <input type="email" class="form-control" id="email" name="email" placeholder="Correo">
         </div>
@@ -256,7 +257,7 @@
         </div>
 
         <div class="mb-3">
-          <button onclick="alertaM()" type="submit" class=" btn btn-primary w-100 fs-5">Enviar Mensaje</button>
+          <button  type="submit" class="btn btn-primary w-100 fs-5">Enviar Mensaje</button>
         </div>
       </form>
 
