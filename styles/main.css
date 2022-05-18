@@ -127,7 +127,6 @@ button {
 footer {
     background: #1b2a4e;
     min-height: 100px;
-    ;
 }
 
 footer p {
@@ -210,9 +209,7 @@ footer p {
         width: 100% !important;
     }
 
-    #servicios-fila-1 {
-        width: 100% !important;
-    }
+
 
     .icono-wrap {
         flex-wrap: wrap !important;
@@ -221,4 +218,9 @@ footer p {
     }
 }
 
-/*=========================preuba num================================*/
+/*=========================cambios loro================================*/
+
+.obj-fit img {
+    padding: 30px 0px 30px 0px;
+    object-fit: contain;
+}
