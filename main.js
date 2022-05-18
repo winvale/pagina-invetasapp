@@ -1,41 +1,26 @@
-let app = document.getElementById('typewriter');
- 
+let app = document.getElementById("typewriter");
+
 let typewriter = new Typewriter(app, {
   loop: true,
   delay: 75,
 });
- 
+
 typewriter
   .pauseFor(2500)
-  .typeString('Inventas App')
+  .typeString("Inventas App")
   .pauseFor(200)
   .deleteChars(10)
   .start();
 
-
-function alertaM() {  
-    alert("¡Tu mensaje fue enviado con exito,pronto te contactaremos!");
- }
-
-function encode(data) {
-  return Object.keys(data)
-    .map(
-      (key) =>
-        encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-    )
-    .join("&");
-}
-
-const handleSubmit = (event) => {
-  event.preventDefault();
+document.getElementById("activateform").addEventListener("click", (e) => {
+  e.preventDefault();
+  let myForm = document.getElementById("pizzaOrder");
+  let formData = new FormData(myForm);
   fetch("/", {
     method: "POST",
-    headers: { "Content-Type": "https://invetas-app.netlify.app/" },
-    body: encode({
-      "form-name": event.target.getAttribute("name"),
-      ...name,
-    }),
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
   })
-    .then(() => navigate("/¡Tu mensaje fue enviado con exito,pronto te contactaremos!/"))
+    .then(() => console.log("Form successfully submitted"))
     .catch((error) => alert(error));
-};
+});
