@@ -14,6 +14,7 @@ typewriter
 
 document.getElementById("activateform").addEventListener("click", (e) => {
   e.preventDefault();
+
   let myForm = document.getElementById("pizzaOrder");
   let formData = new FormData(myForm);
   fetch("/", {
@@ -21,6 +22,10 @@ document.getElementById("activateform").addEventListener("click", (e) => {
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams(formData).toString(),
   })
-    .then(() => console.log("Form successfully submitted"))
+    .then(() => {
+      const toastLiveExample = document.getElementById("liveToast");
+      const toast = new bootstrap.Toast(toastLiveExample);
+      toast.show();
+    })
     .catch((error) => alert(error));
 });
