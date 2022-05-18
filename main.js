@@ -13,6 +13,29 @@ typewriter
   .start();
 
 
-  function alertaM() {  
+function alertaM() {  
     alert("¡Tu mensaje fue enviado con exito,pronto te contactaremos!");
-} 
+ }
+
+function encode(data) {
+  return Object.keys(data)
+    .map(
+      (key) =>
+        encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+    )
+    .join("&");
+}
+
+const handleSubmit = (event) => {
+  event.preventDefault();
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "https://invetas-app.netlify.app/" },
+    body: encode({
+      "form-name": event.target.getAttribute("name"),
+      ...name,
+    }),
+  })
+    .then(() => navigate("/¡Tu mensaje fue enviado con exito,pronto te contactaremos!/"))
+    .catch((error) => alert(error));
+};
