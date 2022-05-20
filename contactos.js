@@ -22,19 +22,22 @@ enviarFormulario.addEventListener("click", (e) => {
   e.preventDefault();
   let myForm = document.getElementById("pizzaOrder");
   let formData = new FormData(myForm);
-
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString(),
-  })
-    .then(() => {
-      const toastLiveExample = document.getElementById("liveToast");
-      const toast = new bootstrap.Toast(toastLiveExample);
-      limpiarFormulario();
-      toast.show();
+  if (validarCampos()) {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
     })
-    .catch((error) => alert(error));
+      .then(() => {
+        const toastLiveExample = document.getElementById("liveToast");
+        const toast = new bootstrap.Toast(toastLiveExample);
+        limpiarFormulario();
+        toast.show();
+      })
+      .catch((error) => alert(error));
+  } else {
+    alert("Ingrese datos validos");
+  }
 });
 
 function limpiarFormulario() {
