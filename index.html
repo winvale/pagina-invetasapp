@@ -74,23 +74,10 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto"
-    id="intro">
-    <h1 class="p-3 fs-2 border-top border-3">Una Organizacion para empresas
-      pequeñas que quieran ser parte de nuevas tecnologias
-      <span class="text-primary">Ventas, Compras, Inventarios,Marketing</span>
-    </h1>
-    <p class="p-3  fs-4">
-      <span class="text-primary">Invetas-App.
-
-      </span> es la agencia donde te ayudamos establecer tu presencia online.
-      SEO, paginas WEB, tiendas virtuales, redes sociales
-    </p>
-  </section>
-
   <!--========================================================== -->
   <!-- Mision y vision-->
   <!--========================================================== -->
+ <section class="pt-5">
   <div class="container">
     <div class="row">
       <div class="col">
@@ -111,7 +98,7 @@
       </div>
     </div>
   </div>
-
+ </section>
   <!--========================================================== -->
   <!-- INTRODUCCION DE SERVICIOS-->
   <!--========================================================== -->
@@ -226,7 +213,7 @@
         <div class="col-lg-3 text-center mt-4">
           <img class="bd-placeholder-img rounded-circle border-circle" width="140" height="140"
             src="https://unavatar.io/github/winvale" alt="">
-          </svg>
+ 
           <h2 class="fw-normal">Desarrollador de Software</h2>
           <p>Some representative placeholder content for the three columns of text below the carousel. This is the first
             column.</p>
@@ -288,7 +275,7 @@
 
   <section id="seccion-contacto" class="border-bottom border-secondary border-2">
     <div id="bg-contactos">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox=""></svg>
+      <svg xmlns="http://www.w3.org/2000/svg"></svg>
     </div>
     <!--========================================================== -->
     <!-- CONTENEDOR DEL FORMULARIO -->
@@ -305,9 +292,8 @@
           <input type="email" class="form-control" id="email" name="email" placeholder="Correo">
         </div>
 
-
         <div class="mb-3">
-          <input type="input" class="form-control" id="name" name="name" placeholder="Nombre">
+          <input type="input" class="form-control" id="names" name="names" placeholder="Nombre">
         </div>
 
         <div class="mb-3">
@@ -319,7 +305,9 @@
         </div>
 
         <div class="mb-3">
-          <button id='activateform' type="submit" class="btn btn-primary w-100 fs-5">Enviar Mensaje</button>
+          <button  id='activateform' type="submit" 
+          class="btn btn-primary w-100 fs-5"  disabled
+          >Enviar Mensaje</button>
         </div>
       </form>
 
@@ -342,20 +330,21 @@
   <div class="position-fixed top-50 end-0" style="z-index: 11">
     <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
       <div class="toast-header">
-        <img class="rounded me-2">
-        <strong class="me-auto">Envio con Exito</strong>
+        <i class="bi bi-hand-thumbs-up-fill col-lg-1"></i>
+        <strong class="me-auto"> Envio con Exito</strong>
         <small>Cerrar</small>
-        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close" 
+       ></button>
       </div>
       <div class="toast-body">
         Muy proto te contactaremos
       </div>
     </div>
   </div>
-
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   <script src="main.js"></script>
+  <script src="contactos.js"></script>
   <script src="/styles/bootstrap/js/bootstrap.min.js"></script>
 
 </body>
