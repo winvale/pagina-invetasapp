@@ -224,3 +224,7 @@ footer p {
     padding: 30px 0px 30px 0px;
     object-fit: contain;
 }
+
+.border-circle {
+    border: 2px solid blue;
+}
