@@ -4,7 +4,43 @@ var email = document.getElementById("email");
 var phone = document.getElementById("phone");
 var message = document.getElementById("message");
 var error = document.getElementById("error");
+var enviarFormulario = document.getElementById("activateform")
 error.style.color = 'red';
+
+const validaciones = [
+  names,email, phone, message
+]
+
+validaciones.forEach(element => {
+  element.addEventListener('onchange', ()=>{
+    let val = true;
+    if(names.value ===null || names.value === '' ){
+      console.log('error');
+      val = false;
+     mensajeError.push('Ingrese Nombre')
+    }
+    if(email.value ===null || email.value === '' ){
+     console.log('error');
+     val = false;
+    mensajeError.push('Ingrese Correo')
+   }
+   if(phone.value ===null || phone.value === '' ){
+     console.log('error');
+     val = false;
+    mensajeError.push('Ingrese Telefono')
+   }
+   if(message.value ===null || message.value === '' ){
+     console.log('error');
+     val = false;
+    mensajeError.push('Ingrese Mensaje')
+   }
+   if(val === true){
+    enviarFormulario.enabled = true;
+   }else{
+    enviarFormulario.disabled = true;
+   }
+  })
+});
 
 let typewriter = new Typewriter(app, {
   loop: true,
@@ -41,7 +77,7 @@ typewriter
      return false;
  }
 
- document.getElementById("activateform").addEventListener("click", (e) => {
+ enviarFormulario.addEventListener("click", (e) => {
   e.preventDefault();
   var mensajeError=[];
   let myForm = document.getElementById("pizzaOrder");
