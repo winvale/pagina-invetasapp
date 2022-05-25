@@ -229,6 +229,10 @@ footer p {
     border: 2px solid blue;
 }
 
-.bi-hand-thumbs-up-fill{
+.bi-hand-thumbs-up-fill {
     color: green;
+}
+
+.section_mis {
+    padding-top: 80px;
 }
