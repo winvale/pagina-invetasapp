@@ -186,9 +186,6 @@ footer p {
         padding-top: 50px;
     }
 
-    #local {
-        flex-wrap: wrap;
-    }
 
     .mapa img {
         width: 100%;
@@ -288,7 +285,7 @@ footer p {
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
-    line-height: 30px;
+    line-height: 43px;
 }
 
 .h2_nombre {
