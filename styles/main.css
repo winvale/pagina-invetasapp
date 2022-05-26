@@ -253,6 +253,7 @@ footer p {
 }
 
 .h1_titulo {
+    padding-top: 100px;
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 60px;
