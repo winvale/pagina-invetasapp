@@ -236,3 +236,72 @@ footer p {
 .section_mis {
     padding-top: 80px;
 }
+
+.h1_mis-vis {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.p_mis-vis {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.h1_titulo {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.p_text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.h3_titulo {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+
+.h3_titulo-p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.h1_h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 30px;
+}
+
+.h2_nombre {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.h2_p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
