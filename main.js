@@ -1,3 +1,4 @@
+//hola
 let app = document.getElementById("typewriter");
 
 let typewriter = new Typewriter(app, {
