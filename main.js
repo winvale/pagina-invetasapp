@@ -12,3 +12,5 @@ typewriter
   .pauseFor(200)
   .deleteChars(10)
   .start();
+
+const hola = 0;
