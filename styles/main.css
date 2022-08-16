@@ -101,7 +101,7 @@ button {
     background-color: #1b2a4e;
     min-height: 500px;
     position: relative;
-    
+
 }
 
 /*=========================CONTACTOS FORMULARIO================================*/
@@ -240,6 +240,7 @@ footer p {
     font-weight: 700;
     font-size: 50px;
     line-height: 60px;
+    width: 360px;
 }
 
 .p_mis-vis {
@@ -304,10 +305,11 @@ footer p {
     font-size: 20px;
     line-height: 30px;
 }
-.img-contact{
-border-radius: 50%;
-margin-top: 5%;
-width: 400px;
-height: 400px;
+
+.img-contact {
+    border-radius: 50%;
+    margin-top: 5%;
+    width: 400px;
+    height: 400px;
 
 }
