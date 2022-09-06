@@ -1,4 +1,3 @@
-//hola
 let app = document.getElementById("typewriter");
 
 let typewriter = new Typewriter(app, {
@@ -13,4 +12,3 @@ typewriter
   .deleteChars(10)
   .start();
 
-const hola = 0;
