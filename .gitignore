@@ -3,3 +3,6 @@ package-lock.json
 .idea
 .vscode
 /dist/
+
+# Local Netlify folder
+.netlify
