@@ -58,10 +58,10 @@
     "stylelint-config-twbs-bootstrap": "^3.0.1",
     "svg-sprite": "^1.5.3",
     "svgo": "^2.8.0",
-    "vnu-jar": "23.3.13"
+    "vnu-jar": "21.10.12"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=10"
   },
   "files": [
     "icons/*.svg",
