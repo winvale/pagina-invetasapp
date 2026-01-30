@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/winvale/pagina-invetasapp#readme",
   "dependencies": {
-    "netlify-cli": "^12.0.11"
+    "netlify-cli": "^23.13.5"
   }
 }

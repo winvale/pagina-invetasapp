@@ -1,739 +1,511 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<link rel="icon" href="./img/iconFavicon.jpeg" />
-		<!-- Required meta tags -->
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="/styles/main.css" />
-		<link rel="stylesheet" href="/styles/bootstrap/css/bootstrap.min.css" />
-		<link
-			rel="stylesheet"
-			href="/styles/bootstrap-icons/font/bootstrap-icons.css"
-		/>
-		<meta
-			name="google-site-verification"
-			content="xnb4wW3MFIdz1Gtbm5ewymRyvZgtpcBoP-EUnQP0LvY"
-		/>
-		<title>Inventas | APP</title>
-	</head>
 
-	<body>
-		<!--========================================================== -->
-		<!-- ENCABEZADO ------->
-		<nav
-			class="navbar navbar-expand-lg fixed-top navbar-light p-2.5 pb-3"
-			id="menu"
-		>
-			<div class="container">
-				<a class="navbar-brand" href="#">
-					<span class="fs-5 text-primary fw-bold">Tecnologia Pacifica</span>
-				</a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="#">Inicio</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#Servicios">Servicios</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#equipo">Equipo</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#Productos">Productos</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#seccion-contacto">Contactos</a>
-						</li>
-					</ul>
-					<form class="d-flex">
-						<input
-							class="form-control me-2"
-							type="email"
-							placeholder="Correo Electronico"
-							aria-label="Suscribete"
-						/>
-						<button
-							class="btn btn-primary btn-primary-outline-success"
-							type="button"
-						>
-							Suscribete
-						</button>
-					</form>
-				</div>
-			</div>
-		</nav>
-		<!--========================================================== -->
-		<!-- SLIDER DE IMAGENES------->
-		<!--========================================================== -->
-		<div id="carousel" class="carousel slide" data-bs-ride="carousel">
-			<div class="carousel-inner">
-				<div class="carousel-item active" data-bs-interval="5000">
-					<img src="./img/slide1.jpg" class="d-block w-100" alt="" />
-				</div>
-				<div class="carousel-item" data-bs-interval="5000">
-					<img src="./img/slide2p.jpg" class="d-block w-100" alt="..." />
-				</div>
-				<div class="carousel-item" data-bs-interval="5000">
-					<img src="./img/slide3P4.jpg" class="d-block w-100" alt="..." />
-				</div>
-			</div>
-			<button
-				class="carousel-control-prev"
-				type="button"
-				data-bs-target="#carousel"
-				data-bs-slide="prev"
-			>
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Previous</span>
+<head>
+	<link rel="icon" href="./img/iconFavicon.jpeg" />
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="/styles/main.css" />
+	<link rel="stylesheet" href="/styles/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/styles/bootstrap-icons/font/bootstrap-icons.css" />
+	<meta name="google-site-verification" content="xnb4wW3MFIdz1Gtbm5ewymRyvZgtpcBoP-EUnQP0LvY" />
+	<title>Inventas | APP</title>
+</head>
+
+<body>
+	<!--========================================================== -->
+	<!-- ENCABEZADO ------->
+	<nav class="navbar navbar-expand-lg fixed-top navbar-light p-2.5 pb-3" id="menu">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				<span class="fs-5 text-primary fw-bold">Tecnologia Pacifica</span>
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
 			</button>
-			<button
-				class="carousel-control-next"
-				type="button"
-				data-bs-target="#carousel"
-				data-bs-slide="next"
-			>
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Next</span>
-			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" aria-current="page" href="#">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#Servicios">Servicios</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#equipo">Equipo</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#Productos">Productos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#seccion-contacto">Contactos</a>
+					</li>
+				</ul>
+				<form class="d-flex">
+					<input class="form-control me-2" type="email" placeholder="Correo Electronico"
+						aria-label="Suscribete" />
+					<button class="btn btn-primary btn-primary-outline-success" type="button">
+						Suscribete
+					</button>
+				</form>
+			</div>
 		</div>
-		<!--========================================================== -->
-		<!-- Mision y vision-->
-		<!--========================================================== -->
-		<section class="section_mis">
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						<h1 class="h1_mis-vis pt-5">MISIÓN</h1>
-						<p class="p_mis-vis">
-							Somos una Startup tecnológica de software que realiza productos de
-							calidad para pequeñas y medianas empresas, en el área de ventas,
-							compras, inventarios, facturación y marketing. Nos comprometemos
-							con nuestros usuarios al brindar un producto de alta calidad y con
-							ayuda de nuestro personal altamente cualificado lograremos
-							satisfacer las expectativas de todo/as, aportando al crecimiento
-							de todos nuestros usuarios.
-						</p>
-					</div>
-					<div class="col">
-						<h1 class="h1_mis-vis pt-5">VISIÓN</h1>
-						<p class="p_mis-vis">
-							Aspiramos para el año 2025 poseer mayor variedad en productos de
-							ventas. Mejorar la calidad de nuestros productos y servicios, y
-							así obtener reconocimiento a nivel nacional e internacional por la
-							participación en los mercados.
-						</p>
-					</div>
-				</div>
+	</nav>
+	<!--========================================================== -->
+	<!-- SLIDER DE IMAGENES------->
+	<!--========================================================== -->
+	<div id="carousel" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active" data-bs-interval="5000">
+				<img src="./img/slide1.jpg" class="d-block w-100" alt="" />
 			</div>
-		</section>
-		<!--========================================================== -->
-		<!-- Quienes Somos-->
-		<!--========================================================== -->
-		<section
-			class="d-flex flex-column justify-content-center align-items-center pt-5 text-center w-50 m-auto"
-			id="intro"
-		>
-			<h1 class="h1_titulo p-5">¿Quiénes Somos?</h1>
-			<p class="p-3 p_text border-top border-3">
-				Una Startup para empresas pequeñas que quieran ser parte de nuevas
-				tecnologías Ventas, Compras, Inventarios, Marketing
-			</p>
-			<p class="p-3 p_text">
-				<span class="text-primary">Tecnologia Pacifica.</span> Es la agencia donde te
-				ayudamos a crecer económicamente y tecnológicamente. ERP, páginas WEB,
-				tiendas comerciales desde la nube, redes sociales.
-			</p>
-		</section>
-
-		<!--========================================================== -->
-		<!-- TIPOS DE SERVICIOS--->
-		<!--========================================================== -->
-
-		<section class="w-100" id="Servicios">
-			<h1 class="text-center h1_titulo">Nuestros Servicios</h1>
-			<div class="row w-75 mx-auto" id="servicios-fila-1">
-				<div
-					class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap"
-				>
-					<img
-						class="mx-auto"
-						src="./img/desarrollo.png"
-						alt="desarrollo"
-						width="180"
-						height="160"
-					/>
-
-					<div>
-						<h3 class="h3_titulo mt-4 px-4 pb-1">DESARROLLO</h3>
-						<p class="px-4 h3_titulo-p">
-							Desarrollo de sistemas; WEB, aplicativos y e-commerce
-						</p>
-					</div>
-				</div>
-				<div
-					class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap"
-				>
-					<img
-						class="mx-auto"
-						src="./img/concepto.png"
-						alt="concepto"
-						width="180"
-						height="160"
-					/>
-					<div>
-						<h3 class="h3_titulo mt-4 px-4 pb-1 icono-wrap">MARKETING</h3>
-						<p class="px-4 h3_titulo-p">
-							Evaluación y comercialización de tu marca, aumenta tus ventas
-						</p>
-					</div>
-				</div>
+			<div class="carousel-item" data-bs-interval="5000">
+				<img src="./img/slide2p.jpg" class="d-block w-100" alt="..." />
 			</div>
-
-			<div class="row w-75 mx-auto mb-5" id="servicios-fila-2">
-				<div
-					class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap"
-				>
-					<img
-						class="mx-auto"
-						src="./img/comunicaciones.png"
-						alt="comunicaciones"
-						width="180"
-						height="160"
-					/>
-
-					<div>
-						<h3 class="h3_titulo mt-4 px-4 pb-1">COMUNICACIONES</h3>
-						<p class="px-4 h3_titulo-p">
-							Evolución de comunicación con tus clientes y proveedores.
-						</p>
-					</div>
-				</div>
-
-				<div
-					class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap"
-				>
-					<img
-						class="mx-auto"
-						src="./img/seo.png"
-						alt="seo"
-						width="180"
-						height="160"
-					/>
-
-					<div>
-						<h3 class="h3_titulo mt-4 px-4 pb-1">NUBE</h3>
-						<p class="px-4 h3_titulo-p">
-							Gestiona, almacena y administra tu Negocio desde la web.
-						</p>
-					</div>
-				</div>
+			<div class="carousel-item" data-bs-interval="5000">
+				<img src="./img/slide3P4.jpg" class="d-block w-100" alt="..." />
 			</div>
-		</section>
-		<!--========================================================== -->
-		<!-- Equipo-->
-		<!--========================================================== -->
-		<section
-			class="d-flex flex-column justify-content-center align-items-center pt-1 text-center w-50 m-auto"
-			id="equipo"
-		>
-			<section>
-				<h1 class="text-center mb-lg-3 h1_titulo p-5">Nuestro Equipo</h1>
-				<div class="p-3 p_text border-top border-3">
-					<h2 class="mb-5 p_text">
-						Somos una Startup en constante crecimiento, con personal fuertemente
-						capacitado en TI, especializados en él desarrollando software con
-						las más recientes tecnologías.
-					</h2>
-					<p class="p_text">
-						Tenemos en nuestro equipo personas que tienen un recorrido por el
-						campo Software y la gestión empresarial. Estamos listos para
-						cualquier reto.
-					</p>
-				</div>
-			</section>
-		</section>
-		<!--========================================================== -->
-		<!-- Avatars Equipo-->
-		<!--========================================================== -->
-
-		<section class="w-100">
-			<div class="container marketing">
-				<!-- Three columns of text below the carousel -->
-				<div class="row">
-					<div class="col-lg-4 text-center pt-5">
-						<a href="https://www.linkedin.com/in/carlos-ernesto-diaz-basante/" target="_blank">
-							<img
-								class="bd-placeholder-img rounded-circle border-circle"
-								width="140"
-								height="140"
-								src="https://unavatar.io/github/carlosdizx"
-								alt=""
-							/>
-						</a>
-						<h2 class="fw-normal h2_nombre mb-2 mt-4">Carlos Díaz</h2>
-						<p class="bi bi-check h2_p lh-1 mb-lg-1">Ingeniero en Sistemas</p>
-						<p class="bi bi-check h2_p lh-1 mb-lg-1">Arquitecto de Software e infraestructura</p>
-						<p class="bi bi-check h2_p lh-1 mb-lg-1">Senior NodeJs</p>
-						<p class="bi bi-check h2_p lh-1 mb-lg-0">
-							Tecnologías:NodeJs, AWS, AzureDevOps, Vue, Serverless, Lambda
-							...
-						</p>
-					</div>
-					<!-- /.col-lg-1 -->
-					<div class="col-lg-4 text-center pt-5">
-						<a
-							href="https://www.linkedin.com/in/brayan-david-tobar-tonguino-046127218/"
-							target="_blank"
-						>
-							<img
-								class="bd-placeholder-img rounded-circle border-circle"
-								width="140"
-								height="140"
-								src="https://unavatar.io/github/dacho7"
-								alt=""
-							/>
-						</a>
-						<h2 class="fw-normal h2_nombre mb-2 mt-4">Brayan Tobar</h2>
-						<p class="bi bi-check h2_p lh-1 mb-lg-1">Ingeniero en Sistemas</p>
-						<p class="bi bi-check h2_p lh-1 mb-lg-1">Analista de Procesos</p>
-						<p class="bi bi-check h2_p lh-1 mb-lg-1">
-							Desarrollador de Software
-						</p>
-						<p class="bi bi-check h2_p lh-1 mb-lg-0">
-							Tecnologías: Vue, React, NodeJS, Python ...
-						</p>
-					</div>
-					<!-- /.col-lg-2 -->
-					<div class="col-lg-4 text-center pt-5">
-						<a href="https://www.linkedin.com/in/cristhian-rosas-4395a5231/" target="_blank">
-							<img
-								class="bd-placeholder-img rounded-circle border-circle"
-								width="140"
-								height="140"
-								src="https://unavatar.io/github/lororock"
-								alt=""
-							/>
-						</a>
-						<h2 class="fw-normal h2_nombre mb-2 mt-4">Cristhian Rosas</h2>
-						<p class="bi bi-check h2_p lh-1 mb-lg-1">Diseñador WEB</p>
-						<p class="bi bi-check h2_p lh-1 mb-lg-1">Desarrollador JAVA</p>
-						<p class="bi bi-check h2_p lh-1 mb-lg-0">
-							Tecnologías: Angular, MySQL, Spring, JavaScript, Java Foundations,
-							Front-end ...
-						</p>
-					</div>
-					<!-- /.col-lg-3 -->
-					<div class="col-lg-4 text-center pt-5">
-						<a href="https://www.linkedin.com/in/edwin-valencia-333849226/" target="_blank">
-							<img
-								class="bd-placeholder-img rounded-circle border-circle"
-								width="140"
-								height="140"
-								src="https://unavatar.io/github/winvale"
-								alt="Edwin Valencia"
-						/></a>
-
-						<h2 class="fw-normal h2_nombre mb-2 mt-4">Edwin Valencia</h2>
-						<p class="bi bi-check h2_p lh-1 mb-lg-1">Ingeniero en Sistemas</p>
-						<p class="bi bi-check h2_p lh-1 mb-lg-1">Product Owner</p>
-						<p class="bi bi-check h2_p lh-1 mb-lg-1">
-							Desarrollador de Software
-						</p>
-						<p class="bi bi-check h2_p lh-1 mb-lg-0">
-							Tecnologías: Angular, Java, .NET, Oracle, Apex Oracle ...
-						</p>
-					</div>
-					<!-- /.row -->
-					<div class="col-lg-4 text-center pt-5">
-						<a
-							href="https://www.linkedin.com/in/jaime-alejandro-gomez-solarte-a354a7232/"
-							target="_blank"
-						>
-							<img
-								class="bd-placeholder-img rounded-circle border-circle"
-								width="140"
-								height="140"
-								src="https://unavatar.io/github/jalegomez96"
-								alt="Jaime Gómez"
-						/></a>
-
-						<h2 class="fw-normal h2_nombre mb-2 mt-4">Jaime Gómez</h2>
-						<p class="bi bi-check h2_p lh-1 mb-lg-1">Ingeniero en Sistemas</p>
-						<p class="bi bi-check h2_p lh-1 mb-lg-1">DevOps</p>
-						<p class="bi bi-check h2_p lh-1 mb-lg-1">
-							Desarrollador de Software
-						</p>
-						<p class="bi bi-check h2_p lh-1 mb-lg-0">
-							Tecnologías: Angular, Vue, Java, Spring Boot, SQL, NodeJs,
-							TypeScript, Azure DevOps
-						</p>
-					</div>
-					<div class="col-lg-4 text-center pt-5">
-						<a href="https://www.linkedin.com/in/maría-alejandra-rosero-maya-630aa41b8/" target="_blank">
-							<img
-									class="bd-placeholder-img rounded-circle border-circle"
-									width="140"
-									height="140"
-									src="https://unavatar.io/github/AlejandraRo"
-									alt=""
-							/>
-						</a>
-						<h2 class="fw-normal h2_nombre mb-2 mt-4">Alejandra Rosero</h2>
-						<p class="bi bi-check h2_p lh-1 mb-lg-1">Ingeniera en Sistemas</p>
-						<p class="bi bi-check h2_p lh-1 mb-lg-1">Desarrollador de Software</p>
-						<p class="bi bi-check h2_p lh-1 mb-lg-0">
-							Tecnologías:Angular, Nodejs, Typescript, AWS, Python, Django
-							...
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Nuestros Prductos -->
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
+	</div>
+	<!--========================================================== -->
+	<!-- Mision y vision-->
+	<!--========================================================== -->
+	<section class="section_mis">
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<section id="Productos">
-						<h1 class="text-center h1_titulo mb-lg-4 mt-2">
-							Nuestros Productos
-						</h1>
-						<div class="m-auto pt-3 text-center text-primary border-top 6">
-							<div class="rows">
-								<div class="obj-fit">
-									<a
-										href="https://inventas-mercamejor.netlify.app/inicioSesion"
-										target="_blank"
-									>
-										<img
-											src="./img/Productos.png"
-											alt="desarrollo"
-											width="100%"
-											height="100%"
-										/>
-										<button type="button" class="btn btn-outline-primary">
-											Ver Demo
-										</button>
-									</a>
-									<div>
-										<h3 class="fs-1 h3_titulo">Inventas para tu negocio</h3>
-										<p class="h3_titulo-p">
-											Desarrollo centrado en realizar facturas, compras,
-											inventarios, cajas, bodegas, y lo mejor de todo realizar
-											tu ajuste de cuentas
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
+					<h1 class="h1_mis-vis pt-5">MISIÓN</h1>
+					<p class="p_mis-vis">
+						Somos una Startup tecnológica de software que realiza productos de
+						calidad para pequeñas y medianas empresas, en el área de ventas,
+						compras, inventarios, facturación y marketing. Nos comprometemos
+						con nuestros usuarios al brindar un producto de alta calidad y con
+						ayuda de nuestro personal altamente cualificado lograremos
+						satisfacer las expectativas de todo/as, aportando al crecimiento
+						de todos nuestros usuarios.
+					</p>
 				</div>
 				<div class="col">
-					<!--Tecnologias-->
-					<section>
-						<h1 class="text-center h1_titulo mb-lg-4 mt-2">Tecnologias</h1>
-						<div
-							id="carouselExampleDark"
-							class="carousel carousel-dark slide text-center"
-							data-bs-ride="carousel"
-						>
-							<div class="carousel-inner">
-								<div class="carousel-item active" data-bs-interval="3000">
-									<img
-										src="https://img.icons8.com/color/48/000000/angularjs.png"
-										class="w-20 align-items-center"
-										alt="..."
-									/>
-									<img
-										src="https://img.icons8.com/color/48/000000/vue-js.png"
-										class="w-20 align-items-center"
-										alt="..."
-									/>
-									<img
-										src="https://img.icons8.com/color/48/000000/react-native.png"
-										class="w-20 align-items-center"
-										alt="..."
-									/>
-									<div class="carousel-caption d-none d-md-block">
-										<h5>Angular</h5>
-										<p>.</p>
-									</div>
-								</div>
-								<div class="carousel-item" data-bs-interval="3000">
-									<img
-										src=" https://img.icons8.com/color/48/000000/firebase.png"
-										class="w-20 align-items-center"
-										alt="..."
-									/>
-									<img
-										src="https://img.icons8.com/color/48/000000/amazon-web-services.png"
-										alt=""
-									/>
-									<img
-										src="https://img.icons8.com/fluency/48/000000/google-cloud.png"
-										alt=""
-									/>
-									<div class="carousel-caption d-none d-md-block">
-										<h5 class="mt-0">Vue</h5>
-										<p></p>
-									</div>
-								</div>
-								<div class="carousel-item">
-									<img
-										src="https://img.icons8.com/color/48/000000/material-ui.png"
-										class="w-20 align-items-center"
-										alt="..."
-									/>
-									<img
-										src="https://img.icons8.com/color/48/000000/bootstrap.png"
-										alt=""
-									/>
-									<img src="https://img.icons8.com/color/48/000000/css.png" />
-									<div class="carousel-caption d-none d-md-block">
-										<h5>Firebase</h5>
-									</div>
+					<h1 class="h1_mis-vis pt-5">VISIÓN</h1>
+					<p class="p_mis-vis">
+						Aspiramos para el año 2025 poseer mayor variedad en productos de
+						ventas. Mejorar la calidad de nuestros productos y servicios, y
+						así obtener reconocimiento a nivel nacional e internacional por la
+						participación en los mercados.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--========================================================== -->
+	<!-- Quienes Somos-->
+	<!--========================================================== -->
+	<section class="d-flex flex-column justify-content-center align-items-center pt-5 text-center w-50 m-auto"
+		id="intro">
+		<h1 class="h1_titulo p-5">¿Quiénes Somos?</h1>
+		<p class="p-3 p_text border-top border-3">
+			Una Startup para empresas pequeñas que quieran ser parte de nuevas
+			tecnologías Ventas, Compras, Inventarios, Marketing
+		</p>
+		<p class="p-3 p_text">
+			<span class="text-primary">Tecnologia Pacifica.</span> Es la agencia donde te
+			ayudamos a crecer económicamente y tecnológicamente. ERP, páginas WEB,
+			tiendas comerciales desde la nube, redes sociales.
+		</p>
+	</section>
+
+	<!--========================================================== -->
+	<!-- TIPOS DE SERVICIOS--->
+	<!--========================================================== -->
+
+	<section class="w-100" id="Servicios">
+		<h1 class="text-center h1_titulo">Nuestros Servicios</h1>
+		<div class="row w-75 mx-auto" id="servicios-fila-1">
+			<div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+				<img class="mx-auto" src="./img/desarrollo.png" alt="desarrollo" width="180" height="160" />
+
+				<div>
+					<h3 class="h3_titulo mt-4 px-4 pb-1">DESARROLLO</h3>
+					<p class="px-4 h3_titulo-p">
+						Desarrollo de sistemas; WEB, aplicativos y e-commerce
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+				<img class="mx-auto" src="./img/concepto.png" alt="concepto" width="180" height="160" />
+				<div>
+					<h3 class="h3_titulo mt-4 px-4 pb-1 icono-wrap">MARKETING</h3>
+					<p class="px-4 h3_titulo-p">
+						Evaluación y comercialización de tu marca, aumenta tus ventas
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row w-75 mx-auto mb-5" id="servicios-fila-2">
+			<div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+				<img class="mx-auto" src="./img/comunicaciones.png" alt="comunicaciones" width="180" height="160" />
+
+				<div>
+					<h3 class="h3_titulo mt-4 px-4 pb-1">COMUNICACIONES</h3>
+					<p class="px-4 h3_titulo-p">
+						Evolución de comunicación con tus clientes y proveedores.
+					</p>
+				</div>
+			</div>
+
+			<div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+				<img class="mx-auto" src="./img/seo.png" alt="seo" width="180" height="160" />
+
+				<div>
+					<h3 class="h3_titulo mt-4 px-4 pb-1">NUBE</h3>
+					<p class="px-4 h3_titulo-p">
+						Gestiona, almacena y administra tu Negocio desde la web.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--========================================================== -->
+	<!-- Equipo-->
+	<!--========================================================== -->
+	<section class="d-flex flex-column justify-content-center align-items-center pt-1 text-center w-50 m-auto"
+		id="equipo">
+		<section>
+			<h1 class="text-center mb-lg-3 h1_titulo p-5">Nuestro Equipo</h1>
+			<div class="p-3 p_text border-top border-3">
+				<h2 class="mb-5 p_text">
+					Somos una Startup en constante crecimiento, con personal fuertemente
+					capacitado en TI, especializados en él desarrollando software con
+					las más recientes tecnologías.
+				</h2>
+				<p class="p_text">
+					Tenemos en nuestro equipo personas que tienen un recorrido por el
+					campo Software y la gestión empresarial. Estamos listos para
+					cualquier reto.
+				</p>
+			</div>
+		</section>
+	</section>
+	<!--========================================================== -->
+	<!-- Avatars Equipo-->
+	<!--========================================================== -->
+
+	<section class="w-100">
+		<div class="container marketing">
+			<!-- Three columns of text below the carousel -->
+			<div class="row">
+				<div class="col-lg-4 text-center pt-5">
+					<a href="https://www.linkedin.com/in/carlos-ernesto-diaz-basante/" target="_blank">
+						<img class="bd-placeholder-img rounded-circle border-circle" width="140" height="140"
+							src="https://unavatar.io/github/carlosdizx" alt="" />
+					</a>
+					<h2 class="fw-normal h2_nombre mb-2 mt-4">Carlos Díaz</h2>
+					<p class="bi bi-check h2_p lh-1 mb-lg-1">Ingeniero en Sistemas</p>
+					<p class="bi bi-check h2_p lh-1 mb-lg-1">Arquitecto de Software e infraestructura</p>
+					<p class="bi bi-check h2_p lh-1 mb-lg-1">Senior NodeJs</p>
+					<p class="bi bi-check h2_p lh-1 mb-lg-0">
+						Tecnologías:NodeJs, AWS, AzureDevOps, Vue, Serverless, Lambda
+						...
+					</p>
+				</div>
+				<!-- /.col-lg-1 -->
+				<div class="col-lg-4 text-center pt-5">
+					<a href="https://www.linkedin.com/in/brayan-david-tobar-tonguino-046127218/" target="_blank">
+						<img class="bd-placeholder-img rounded-circle border-circle" width="140" height="140"
+							src="https://unavatar.io/github/dacho7" alt="" />
+					</a>
+					<h2 class="fw-normal h2_nombre mb-2 mt-4">Brayan Tobar</h2>
+					<p class="bi bi-check h2_p lh-1 mb-lg-1">Ingeniero en Sistemas</p>
+					<p class="bi bi-check h2_p lh-1 mb-lg-1">Analista de Procesos</p>
+					<p class="bi bi-check h2_p lh-1 mb-lg-1">
+						Desarrollador de Software
+					</p>
+					<p class="bi bi-check h2_p lh-1 mb-lg-0">
+						Tecnologías: Vue, React, NodeJS, Python ...
+					</p>
+				</div>
+				<!-- /.col-lg-2 -->
+				<div class="col-lg-4 text-center pt-5">
+					<a href="https://www.linkedin.com/in/cristhian-rosas-4395a5231/" target="_blank">
+						<img class="bd-placeholder-img rounded-circle border-circle" width="140" height="140"
+							src="https://unavatar.io/github/lororock" alt="" />
+					</a>
+					<h2 class="fw-normal h2_nombre mb-2 mt-4">Cristhian Rosas</h2>
+					<p class="bi bi-check h2_p lh-1 mb-lg-1">Diseñador WEB</p>
+					<p class="bi bi-check h2_p lh-1 mb-lg-1">Desarrollador JAVA</p>
+					<p class="bi bi-check h2_p lh-1 mb-lg-0">
+						Tecnologías: Angular, MySQL, Spring, JavaScript, Java Foundations,
+						Front-end ...
+					</p>
+				</div>
+				<!-- /.col-lg-3 -->
+			</div>
+			<!-- Segunda fila centrada -->
+			<div class="row justify-content-center">
+				<div class="col-lg-4 text-center pt-5">
+					<a href="https://www.linkedin.com/in/edwin-valencia-333849226/" target="_blank">
+						<img class="bd-placeholder-img rounded-circle border-circle" width="140" height="140"
+							src="https://unavatar.io/github/winvale" alt="Edwin Valencia" /></a>
+
+					<h2 class="fw-normal h2_nombre mb-2 mt-4">Edwin Valencia</h2>
+					<p class="bi bi-check h2_p lh-1 mb-lg-1">Ingeniero en Sistemas</p>
+					<p class="bi bi-check h2_p lh-1 mb-lg-1">Product Owner</p>
+					<p class="bi bi-check h2_p lh-1 mb-lg-1">
+						Desarrollador de Software
+					</p>
+					<p class="bi bi-check h2_p lh-1 mb-lg-0">
+						Tecnologías: Angular, Java, .NET, Oracle, Apex Oracle ...
+					</p>
+				</div>
+				<!-- /.row -->
+				<div class="col-lg-4 text-center pt-5">
+					<a href="https://www.linkedin.com/in/jaime-alejandro-gomez-solarte-a354a7232/" target="_blank">
+						<img class="bd-placeholder-img rounded-circle border-circle" width="140" height="140"
+							src="https://unavatar.io/github/jalegomez96" alt="Jaime Gómez" /></a>
+
+					<h2 class="fw-normal h2_nombre mb-2 mt-4">Jaime Gómez</h2>
+					<p class="bi bi-check h2_p lh-1 mb-lg-1">Ingeniero en Sistemas</p>
+					<p class="bi bi-check h2_p lh-1 mb-lg-1">DevOps</p>
+					<p class="bi bi-check h2_p lh-1 mb-lg-1">
+						Desarrollador de Software
+					</p>
+					<p class="bi bi-check h2_p lh-1 mb-lg-0">
+						Tecnologías: Angular, Vue, Java, Spring Boot, SQL, NodeJs,
+						TypeScript, Azure DevOps
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Nuestros Prductos -->
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<section id="Productos">
+					<h1 class="text-center h1_titulo mb-lg-4 mt-2">
+						Nuestros Productos
+					</h1>
+					<div class="m-auto pt-3 text-center text-primary border-top 6">
+						<div class="rows">
+							<div class="obj-fit">
+								<a href="https://inventas-mercamejor.netlify.app/inicioSesion" target="_blank">
+									<img src="./img/Productos.png" alt="desarrollo" width="100%" height="100%" />
+									<button type="button" class="btn btn-outline-primary">
+										Ver Demo
+									</button>
+								</a>
+								<div>
+									<h3 class="fs-1 h3_titulo">Inventas para tu negocio</h3>
+									<p class="h3_titulo-p">
+										Desarrollo centrado en realizar facturas, compras,
+										inventarios, cajas, bodegas, y lo mejor de todo realizar
+										tu ajuste de cuentas
+									</p>
 								</div>
 							</div>
-							<button
-								class="carousel-control-prev"
-								type="button"
-								data-bs-target="#carouselExampleDark"
-								data-bs-slide="prev"
-							>
-								<span
-									class="carousel-control-prev-icon"
-									aria-hidden="true"
-								></span>
-								<span class="visually-hidden">Previous</span>
-							</button>
-							<button
-								class="carousel-control-next"
-								type="button"
-								data-bs-target="#carouselExampleDark"
-								data-bs-slide="next"
-							>
-								<span
-									class="carousel-control-next-icon"
-									aria-hidden="true"
-								></span>
-								<span class="visually-hidden">Next</span>
-							</button>
-						</div>
-					</section>
-					<div class="obj-fit text-center">
-						<a href="" target="_blank">
-							<img
-								src="./img/Scrum-metodos.png"
-								alt="desarrollo"
-								width="80%"
-								height="80%"
-						/></a>
-						<div>
-							<h3 class="fs-1 h3_titulo text-center">Metodología</h3>
-							<p class="h3_titulo-p">
-								En Pacifica Tech, entendemos que la excelencia en el desarrollo 
-								tecnológico se logra a través de una metodología robusta y 
-								transparente. Nos esforzamos por ofrecer soluciones innovadoras
-								que superen las expectativas de nuestros clientes.
-
-							</p>
-							<h3 class="fs-1 h3_titulo text-center">Transparencia y Colaboración</h3>
-							<p class="h3_titulo-p">
-								En Pacifica Tech, creemos en la transparencia total. 
-								Permitimos a nuestros clientes observar y participar activamente en 
-								cada etapa del desarrollo, proporcionando informes regulares y demostraciones 
-								para asegurar la plena satisfacción del cliente.
-
-								En cada línea de código, perseguimos la excelencia para transformar 
-								visiones en soluciones tecnológicas tangibles. ¡Su éxito es nuestro compromiso!
 						</div>
 					</div>
-				</div>
+				</section>
 			</div>
-		</div>
-		<!--========================================================== -->
-		<!-- mapa-->
-		<!--========================================================== -->
-		<section>
-			<div id="local" class="border-top border-2">
-				<div class="mapa">
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5641.201630411809!2d-77.46825558528381!3d1.2077648251354758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e2ecc91b79b293d%3A0x4d79c8d89bd75615!2sConsaca%2C%20Nari%C3%B1o!5e0!3m2!1ses!2sco!4v1652311135645!5m2!1ses!2sco"
-						width="100%"
-						height="100%"
-						style="border: 0"
-						allowfullscreen=""
-						loading="lazy"
-						referrerpolicy="no-referrer-when-downgrade"
-					></iframe>
-				</div>
-				<div class="wrapper-local">
-					<h2 class="h3_titulo">Ubicado en Nariño, Consacá</h2>
-					<h2 class="h3_titulo" id="typewriter"></h2>
-					<p class="h2_p text-body">
-						Elegimos Consacá Nariño para nuestra oficina con el objetivo de
-						estar cerca a nuestros clientes. El corazón de empresarios
-						talentosos, cerca de restaurantes, tiendas y tan solo 45 minutos de
-						las la ciudad de Pasto. ¡Contáctenos y no se arrepentirán!
-					</p>
-					<section class="d-flex justify-content-start" id="numeros-local">
-						<div class="p-1">
-							<p class="text-primary text-center p-1">Lugares Históricos</p>
+			<div class="col">
+				<!--Tecnologias-->
+				<section>
+					<h1 class="text-center h1_titulo mb-lg-4 mt-2">Tecnologias</h1>
+					<div id="carouselExampleDark" class="carousel carousel-dark slide text-center"
+						data-bs-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active" data-bs-interval="3000">
+								<img src="https://img.icons8.com/color/48/000000/angularjs.png"
+									class="w-20 align-items-center" alt="..." />
+								<img src="https://img.icons8.com/color/48/000000/vue-js.png"
+									class="w-20 align-items-center" alt="..." />
+								<img src="https://img.icons8.com/color/48/000000/react-native.png"
+									class="w-20 align-items-center" alt="..." />
+								<div class="carousel-caption d-none d-md-block">
+									<h5>Angular</h5>
+									<p>.</p>
+								</div>
+							</div>
+							<div class="carousel-item" data-bs-interval="3000">
+								<img src=" https://img.icons8.com/color/48/000000/firebase.png"
+									class="w-20 align-items-center" alt="..." />
+								<img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" alt="" />
+								<img src="https://img.icons8.com/fluency/48/000000/google-cloud.png" alt="" />
+								<div class="carousel-caption d-none d-md-block">
+									<h5 class="mt-0">Vue</h5>
+									<p></p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="https://img.icons8.com/color/48/000000/material-ui.png"
+									class="w-20 align-items-center" alt="..." />
+								<img src="https://img.icons8.com/color/48/000000/bootstrap.png" alt="" />
+								<img src="https://img.icons8.com/color/48/000000/css.png" />
+								<div class="carousel-caption d-none d-md-block">
+									<h5>Firebase</h5>
+								</div>
+							</div>
 						</div>
-						<div class="p-1">
-							<p class="text-primary text-center p-1">Visítanos</p>
-						</div>
-						<div class="p-1">
-							<p class="text-primary text-center p-1">22 °C Temperatura</p>
-						</div>
-					</section>
-				</div>
-			</div>
-		</section>
-		<!--========================================================== -->
-		<!-- SECCION CONTACTOS-->
-		<!--========================================================== -->
-		<section
-			id="seccion-contacto"
-			class="border-bottom border-secondary border-2"
-		>
-			<div id="bg-contactos">
-				<svg xmlns="http://www.w3.org/2000/svg"></svg>
-			</div>
-			<!--========================================================== -->
-			<!-- CONTENEDOR DEL FORMULARIO -->
-			<!--========================================================== -->
-			<div id="divexito"></div>
-			<div
-				class="formularioContacto container border-top border-primary"
-				style="max-width: 500px"
-				id="contenedor-formulario"
-			>
-				<div class="text-center mb-4" id="titulo-formulario">
-					<div>
-						<img
-							src="./img/contacto.jpg"
-							alt=""
-							class="img-contact img-fluid ps-5"
-						/>
-					</div>
-					<h2>Contáctanos</h2>
-					<p class="fs-5">Inventas APP te espera</p>
-				</div>
-				<form name="contacto" class="formnet" netlify id="pizzaOrder">
-					<div class="mb-3">
-						<input
-							type="email"
-							class="form-control"
-							id="email"
-							name="email"
-							placeholder="Correo"
-						/>
-					</div>
-
-					<div class="mb-3">
-						<input
-							class="form-control"
-							id="names"
-							name="names"
-							placeholder="Nombre"
-						/>
-					</div>
-
-					<div class="mb-3">
-						<input
-							type="tel"
-							class="form-control"
-							name="phone"
-							id="phone"
-							placeholder="Teléfono"
-						/>
-					</div>
-
-					<div class="mb-3">
-						<textarea
-							class="form-control"
-							name="message"
-							id="message"
-							placeholder="Comentarios"
-							rows="4"
-						></textarea>
-					</div>
-					<div class="mb-3">
-						<button
-							id="activateform"
-							type="submit"
-							class="btn btn-primary w-100 fs-5"
-							disabled
-						>
-							Enviar mensaje
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+							data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+							data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
 						</button>
 					</div>
-				</form>
-			</div>
-		</section>
-		<!--========================================================= -->
-		<!--FOOTER-->
-		<!--========================================================== -->
-		<footer
-			class="w-100 d-flex align-items-center justify-content-center flex-wrap"
-		>
-			<p class="fs-5 px-3 pt-3">
-				InventasApp &copy; Todos Los Derechos Reservados 2023
-			</p>
-			<div id="iconos">
-				<a
-					href="https://www.facebook.com/Inventas-107989581949514/"
-					target="_blank"
-					><i class="bi bi-facebook"></i
-				></a>
-				<a href="https://www.instagram.com/inventas_app/" target="_blank"
-					><i class="bi bi-instagram"></i
-				></a>
-				<a href="https://www.tiktok.com/@invetasdesarrollo" target="_blank"
-					><i class="bi bi-tiktok"></i
-				></a>
-			</div>
-		</footer>
-		<!-- Envio exitoso -->
-		<div class="position-fixed top-50 end-0" style="z-index: 11">
-			<div
-				id="liveToast"
-				class="toast"
-				role="alert"
-				aria-live="assertive"
-				aria-atomic="true"
-			>
-				<div class="toast-header">
-					<i class="bi bi-hand-thumbs-up-fill col-lg-1"></i>
-					<strong class="me-auto"> Envio con Exito</strong>
-					<small>Cerrar</small>
-					<button
-						type="button"
-						class="btn-close"
-						data-bs-dismiss="toast"
-						aria-label="Close"
-					></button>
+				</section>
+				<div class="obj-fit text-center">
+					<a href="" target="_blank">
+						<img src="./img/Scrum-metodos.png" alt="desarrollo" width="80%" height="80%" /></a>
+					<div>
+						<h3 class="fs-1 h3_titulo text-center">Metodología</h3>
+						<p class="h3_titulo-p">
+							En Pacifica Tech, entendemos que la excelencia en el desarrollo
+							tecnológico se logra a través de una metodología robusta y
+							transparente. Nos esforzamos por ofrecer soluciones innovadoras
+							que superen las expectativas de nuestros clientes.
+
+						</p>
+						<h3 class="fs-1 h3_titulo text-center">Transparencia y Colaboración</h3>
+						<p class="h3_titulo-p">
+							En Pacifica Tech, creemos en la transparencia total.
+							Permitimos a nuestros clientes observar y participar activamente en
+							cada etapa del desarrollo, proporcionando informes regulares y demostraciones
+							para asegurar la plena satisfacción del cliente.
+
+							En cada línea de código, perseguimos la excelencia para transformar
+							visiones en soluciones tecnológicas tangibles. ¡Su éxito es nuestro compromiso!
+					</div>
 				</div>
-				<div class="toast-body">Muy pronto te contactaremos</div>
 			</div>
 		</div>
-		<!-- Option 1: Bootstrap Bundle with Popper -->
-		<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-		<script src="main.js"></script>
-		<script src="contactos.js"></script>
-		<script src="/styles/bootstrap/js/bootstrap.min.js"></script>
-	</body>
+	</div>
+	<!--========================================================== -->
+	<!-- mapa-->
+	<!--========================================================== -->
+	<section>
+		<div id="local" class="border-top border-2">
+			<div class="mapa">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5641.201630411809!2d-77.46825558528381!3d1.2077648251354758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e2ecc91b79b293d%3A0x4d79c8d89bd75615!2sConsaca%2C%20Nari%C3%B1o!5e0!3m2!1ses!2sco!4v1652311135645!5m2!1ses!2sco"
+					width="100%" height="100%" style="border: 0" allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			<div class="wrapper-local">
+				<h2 class="h3_titulo">Ubicado en Nariño, Consacá</h2>
+				<h2 class="h3_titulo" id="typewriter"></h2>
+				<p class="h2_p text-body">
+					Elegimos Consacá Nariño para nuestra oficina con el objetivo de
+					estar cerca a nuestros clientes. El corazón de empresarios
+					talentosos, cerca de restaurantes, tiendas y tan solo 45 minutos de
+					las la ciudad de Pasto. ¡Contáctenos y no se arrepentirán!
+				</p>
+				<section class="d-flex justify-content-start" id="numeros-local">
+					<div class="p-1">
+						<p class="text-primary text-center p-1">Lugares Históricos</p>
+					</div>
+					<div class="p-1">
+						<p class="text-primary text-center p-1">Visítanos</p>
+					</div>
+					<div class="p-1">
+						<p class="text-primary text-center p-1">22 °C Temperatura</p>
+					</div>
+				</section>
+			</div>
+		</div>
+	</section>
+	<!--========================================================== -->
+	<!-- SECCION CONTACTOS-->
+	<!--========================================================== -->
+	<section id="seccion-contacto" class="border-bottom border-secondary border-2">
+		<div id="bg-contactos">
+			<svg xmlns="http://www.w3.org/2000/svg"></svg>
+		</div>
+		<!--========================================================== -->
+		<!-- CONTENEDOR DEL FORMULARIO -->
+		<!--========================================================== -->
+		<div id="divexito"></div>
+		<div class="formularioContacto container border-top border-primary" style="max-width: 500px"
+			id="contenedor-formulario">
+			<div class="text-center mb-4" id="titulo-formulario">
+				<div>
+					<img src="./img/contacto.jpg" alt="" class="img-contact img-fluid ps-5" />
+				</div>
+				<h2>Contáctanos</h2>
+				<p class="fs-5">Inventas APP te espera</p>
+			</div>
+			<form name="contacto" class="formnet" netlify id="pizzaOrder">
+				<div class="mb-3">
+					<input type="email" class="form-control" id="email" name="email" placeholder="Correo" />
+				</div>
+
+				<div class="mb-3">
+					<input class="form-control" id="names" name="names" placeholder="Nombre" />
+				</div>
+
+				<div class="mb-3">
+					<input type="tel" class="form-control" name="phone" id="phone" placeholder="Teléfono" />
+				</div>
+
+				<div class="mb-3">
+					<textarea class="form-control" name="message" id="message" placeholder="Comentarios"
+						rows="4"></textarea>
+				</div>
+				<div class="mb-3">
+					<button id="activateform" type="submit" class="btn btn-primary w-100 fs-5" disabled>
+						Enviar mensaje
+					</button>
+				</div>
+			</form>
+		</div>
+	</section>
+	<!--========================================================= -->
+	<!--FOOTER-->
+	<!--========================================================== -->
+	<footer class="w-100 d-flex align-items-center justify-content-center flex-wrap">
+		<p class="fs-5 px-3 pt-3">
+			InventasApp &copy; Todos Los Derechos Reservados 2023
+		</p>
+		<div id="iconos">
+			<a href="https://www.facebook.com/Inventas-107989581949514/" target="_blank"><i
+					class="bi bi-facebook"></i></a>
+			<a href="https://www.instagram.com/inventas_app/" target="_blank"><i class="bi bi-instagram"></i></a>
+			<a href="https://www.tiktok.com/@invetasdesarrollo" target="_blank"><i class="bi bi-tiktok"></i></a>
+		</div>
+	</footer>
+	<!-- Envio exitoso -->
+	<div class="position-fixed top-50 end-0" style="z-index: 11">
+		<div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+			<div class="toast-header">
+				<i class="bi bi-hand-thumbs-up-fill col-lg-1"></i>
+				<strong class="me-auto"> Envio con Exito</strong>
+				<small>Cerrar</small>
+				<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+			</div>
+			<div class="toast-body">Muy pronto te contactaremos</div>
+		</div>
+	</div>
+	<!-- Option 1: Bootstrap Bundle with Popper -->
+	<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+	<script src="main.js"></script>
+	<script src="contactos.js"></script>
+	<script src="/styles/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
 </html>
